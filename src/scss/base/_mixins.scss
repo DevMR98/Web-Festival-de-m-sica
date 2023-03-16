@@ -1,0 +1,44 @@
+@use 'variables' as v;
+
+/*
+@mixin header($color){
+    color: $color;
+    text-align: center;
+    text-decoration: double;
+}*/
+
+//mixing de media query
+@mixin telefono(){
+    @media (min-width:v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet(){
+    @media (min-width:v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media (min-width:v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktopLarge(){
+    @media (min-width:v.$desktopLarge) {
+        @content;
+    }
+}
+
+@mixin grid($columnas,$unidad){
+    display: grid;
+    grid-template-columns: repeat($columnas,1fr);
+    gap:$unidad;
+}
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

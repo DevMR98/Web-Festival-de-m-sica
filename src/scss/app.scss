@@ -1,0 +1,8 @@
+/*@import 'base/variables';antigua sintaxis para importar archivos css*/
+@use 'base';//nueva sintaxis incluida con _index.scss y @forward
+@use 'contenido';
+@use 'layout';
+
+
+
+
